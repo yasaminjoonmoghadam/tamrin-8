@@ -1,0 +1,470 @@
+body{
+    margin: 0px;
+}
+.nav{
+    height: 49px;
+    width: 100%;
+    background-color: rgb(10, 19, 4);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: visible;
+
+}
+#menu{
+
+    position: absolute;
+    top: 0px;
+    left: 0px; 
+    overflow: visible;
+    list-style-type: none;
+    padding-left: 0px;
+
+}
+
+#menu li{
+    float: left;
+
+}
+
+
+#menu li a
+{   
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font: 15px bold;
+    background-color: rgb(10, 19, 4);
+    /* border-right: outset 1px rgb(24, 131, 37);   */
+}
+#menu li span{
+    background-color:rgb(78, 116, 21);
+    padding: 15px;
+    color: whitesmoke;
+
+}
+
+
+#menu li a:hover{
+    color: rgb(78, 116, 21);
+    transition: 2s;
+    border: solid 1px rgb(78, 116, 21);
+
+
+  
+
+}   
+#menu li:hover .submenu{
+    display: block;
+}
+
+.submenu{
+    list-style-type: none;
+    padding-left: 0px;
+    display: none;
+    overflow: visible;
+    position: absolute;
+    z-index:1;
+
+
+}
+#menu .submenu li
+{   
+    float: none;
+    margin-top: 25px;
+    overflow: visible;
+
+    
+}
+#menu .submenu li a{
+    padding-right: 45px;
+}
+
+
+
+#search{
+    position: absolute;
+    top: 9;
+    right: 5%;
+    border-radius: 10px;
+    padding: 5px;
+    width: 80;
+}
+#search:focus{
+    transition: 1s;
+    width: 300px;
+
+
+}
+.pic{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+    
+}
+
+.pic img{
+    width: 100%;
+    height: 680px;
+}
+.pic label{
+    position: absolute;
+    left: 2px;
+    bottom: 10px;
+    background-color: gray;
+    padding: 10px;
+    color: whitesmoke;
+    font-size: 35px;
+    display: block;
+    animation: mymove 4s ;
+
+}
+@keyframes mymove {
+    from {opacity:0 ; }
+    to {opacity:1 ;}
+  }
+
+
+#team{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f1f1f1;
+    justify-content: center;
+    box-sizing: border-box;
+
+}
+
+
+#team h2{
+    position: absolute;
+    left: 45%;
+    
+}
+.team{
+  position: relative;
+  width: 25%;
+  padding: 65px 15px 55px 15px ;
+  box-sizing: border-box;
+
+
+  
+}
+.team1{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+
+.team1 img{
+    border-radius: 50%;
+    width: 240;
+    height: 240;
+    transition: 2s;
+
+}
+
+.team1 img:hover{
+  transform: rotateZ(360deg); 
+  border: dashed 3px ;
+  box-shadow: 3px 7px rgba(44, 18, 18, 0.452);
+}
+
+.team1 p{
+    position: absolute;
+    top: 90%;
+    margin: 10px;
+
+}
+
+ .team1 h3{
+  position: absolute;
+  height: 50px;
+  top: 83%;
+  margin: 10px;
+} 
+
+#work-row{
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  background-color: #141313cc;
+  box-sizing: border-box;
+
+}
+
+#work-row p {
+  color: azure;
+  position: relative;
+  top: 15%;
+  left: -11%;
+  width: 390;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20;
+  
+}
+
+.work{
+width: 20%;
+padding: 15px 30px 25px 5px ;
+box-sizing: border-box;
+}
+
+
+.work1{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: left;
+flex-direction: column;
+background-color: rgb(243, 243, 243);
+transition: 1s;
+
+}
+.work1:hover{
+  opacity: 0.9;
+  border: outset 3px gainsboro;
+}
+
+.work img{
+  position: relative;
+  width: 100%;
+ 
+}
+
+
+.work1 h5{
+  position: relative;
+  text-align: center;
+  height: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  margin-bottom: 28;
+  margin-top: 10;
+
+}
+.work1 h6{
+  position: relative;
+  text-align: center;
+  height: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  margin-top: 30;
+
+}
+
+.work1 ul{
+  position: relative;
+  list-style-type:none;
+  font-family: arial;
+  font-size: 20;
+  margin-top: -5px;
+}
+ 
+.warper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  flex-wrap:wrap;
+}
+
+h3{
+  display: flex;
+  justify-content: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 35px;
+}
+  
+.warper .pricing-table{
+  width: 30%;
+  background-image: linear-gradient(to right bottom, #454143, #4d444b, #524856, #554d61, #53536e, #48536e, #3c526d, #2f526a, #22495a, #1a404a, #17373a, #152d2c);  margin: 10px;
+  padding: 0px 10px 0px;
+  text-align: center;
+  border-radius: 5px;
+
+}
+
+.warper .pricing-table h2{
+  text-transform: uppercase;
+  padding: 0 0 10px;
+  color: #fff;
+  letter-spacing: 5px;
+
+}
+
+.warper .pricing-table .contant{
+  background-color: #fff;
+  border-radius: 5px;
+  padding-left: 0;
+  margin: 20px;
+
+
+}
+.warper .pricing-table .contant ul{
+  padding-left: 0px;
+}
+
+.warper .pricing-table .contant ul li{
+  list-style: none;
+  font-size: 13px;
+  border: 1px solid;
+  width: 100%;
+  padding: 18px 0;  
+  
+  
+}
+
+.warper .pricing-table .contant ul li button{
+  background-color: #152D2C;
+  padding: 12;
+  border-radius: 5px;
+  width: 40%;
+  color: white;
+  }
+
+.warper .pricing-table .contant ul li button:hover{
+  
+  width: 60%;
+  transition: 2s;
+  font-size: 19px;
+  background-color: #3c526d;
+}
+
+.contactus{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-top: 2%;
+  flex-wrap:wrap;
+  background-color: #48536e88;
+  position: relative;
+}
+.contactus h2{
+  position: relative;
+  left:-23% ;
+  top: 5%;
+  color: whitesmoke;
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-underline-offset: 3px;
+}
+
+.contactus ul{
+  position: relative;
+  left:-30% ;
+  top: 80px;
+  line-height: 35px;
+  font-size: 23;
+  list-style-type: none;
+  padding-left: 0;
+  color: whitesmoke;
+  font-family: sans-serif;
+}
+
+.contactus .form{
+  width: 50%;
+  background-color: rgb(240, 240, 240);
+  margin: 30px;
+  padding: 10px;
+  box-shadow: 0px 0px 30px rgb(58, 58, 58);
+
+}
+
+.contactus .table form input{
+  margin-left: 20;
+  padding: 4px;
+  width: 90%;
+  border: none;
+  border-bottom: 1px outset;
+  background-color: rgb(240, 240, 240);
+}
+
+.contactus .table form p {
+  margin-left: 20px;
+}
+
+.contactus .table form button{
+  position: relative;
+  left: 70%;
+  top: 20px;
+  width: 10%;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(23, 41, 32);
+  border: 1px solid;
+  font-size: 15px;
+  border: none;
+
+}
+
+@media only screen and (max-width:600px)  {
+  .team {
+    
+    width: 50%;
+  }
+  #team{
+    flex: 50%;
+  }
+  .work{
+    width: 60%;
+  }
+
+  .warper .pricing-table{
+    width: 90%;
+  }
+
+
+  .contactus .form{
+    width: 90%;
+    
+  }
+  
+}
+.pic img{
+  width: 100%;
+}
+
+.Footer{
+  width: 100%;
+  height: 200px;
+  background-color: rgb(0, 0, 22);
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.Footer h3{
+  color: whitesmoke;
+  position: relative;
+  left: 3%;
+}
+
+
+
+
+
+.Footer .icon  a img{
+  
+display: inline-flex;
+position: relative;
+left: -99px;
+width:50px;
+margin-left: 10px;
+margin-top: 80px;
+
+
+
+  
+}
